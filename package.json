@@ -1,11 +1,11 @@
 {
   "name": "@tomsd/serial",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "generates serial numbers",
   "main": "index.js",
   "module": "src/serial.js",
   "scripts": {
-    "build":"webpack",
+    "build": "webpack",
     "test": "exit 0"
   },
   "keywords": [],
