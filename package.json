@@ -3,10 +3,17 @@
   "version": "1.0.1",
   "description": "generates serial numbers",
   "main": "index.js",
+  "module": "src/serial.js",
   "scripts": {
     "test": "exit 0"
   },
   "keywords": [],
   "author": "tom",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^3.4.1",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
 }
