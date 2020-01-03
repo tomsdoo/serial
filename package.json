@@ -5,6 +5,7 @@
   "main": "index.js",
   "module": "src/serial.js",
   "scripts": {
+    "build":"webpack",
     "test": "exit 0"
   },
   "keywords": [],
