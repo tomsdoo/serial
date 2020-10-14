@@ -1,13 +1,5 @@
 {
   "presets":[
-    [
-      "env",
-      {
-        "targets":{
-          "node":true
-        },
-        "useBuiltIns":true
-      }
-    ]
+    "@babel/preset-env"
   ]
 }

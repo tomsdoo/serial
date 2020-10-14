@@ -2,10 +2,11 @@
   "name": "@tomsd/serial",
   "version": "1.0.5",
   "description": "generates serial numbers",
-  "main": "index.js",
-  "module": "src/serial.js",
+  "main": "dist/serial.js",
+  "module": "dist/serial.js",
+  "types":"dist/serial.d.ts",
   "scripts": {
-    "build": "webpack",
+    "build": "tsc --build tsconfig.build.json",
     "test": "mocha --require @babel/register test/test.js"
   },
   "keywords": [],
@@ -13,11 +14,13 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.12.0",
     "@babel/register": "^7.8.3",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^3.4.1",
     "mocha": "^7.0.0",
     "style-loader": "^1.1.2",
+    "typescript": "^4.0.3",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }

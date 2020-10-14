@@ -1,4 +1,4 @@
-import serial from "../src/serial.js";
+import serial from "../dist/serial.js";
 const assert = require("assert");
 
 describe("number()", function(){
