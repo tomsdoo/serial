@@ -1,7 +1,7 @@
-import serial from "../dist/esm/serial.js";
+const serial = require("../dist/cjs/serial.js").default;
 const assert = require("assert");
 
-console.log("test for ES modules");
+console.log("test for commonjs");
 
 describe("number()", function(){
   it("returns 0 length array if parameter is nothing", function(){
