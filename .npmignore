@@ -4,6 +4,5 @@ package-lock.json
 tsconfig.build.base.json
 tsconfig.build.cjs.json
 tsconfig.build.esm.json
-webpack.config.js
 .gitignore
 .npmignore
