@@ -6,7 +6,7 @@
   "module": "dist/esm/serial.js",
   "types": "dist/esm/serial.d.ts",
   "scripts": {
-    "build": "tsc --build tsconfig.build.esm.json && tsc --build tsconfig.build.cjs.json",
+    "build": "tsc --project tsconfig.build.esm.json && tsc --project tsconfig.build.cjs.json",
     "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register \"test/test.ts\" --timeout 30000"
   },
   "keywords": [],
