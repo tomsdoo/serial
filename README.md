@@ -7,20 +7,16 @@ npm install @tomsd/serial
 
 # Usage
 
-``` html
-<script src="@tomsd/serial/dist/serial.js"></script>
+``` js
+import Serial from "@tomsd/serial";
 ```
 
 ``` js
-import serial from "@tomsd/serial";
-```
-
-``` js
-console.log(serial.number(10));
-console.log(serial.number(10,1));
-console.log(serial.char.lower(26));
-console.log(serial.char.upper(26));
-console.log(serial.char.lower(5,2));
-console.log(serial.char.upper(8,4));
+console.log(Serial.number(10));
+console.log(Serial.number(10,1));
+console.log(Serial.char.lower(26));
+console.log(Serial.char.upper(26));
+console.log(Serial.char.lower(5,2));
+console.log(Serial.char.upper(8,4));
 
 ```
