@@ -4,7 +4,7 @@ import { strict as assert } from "assert";
 
 describe("Serial.number()", () => {
   it("returns 0 length array if parameter is nothing", () => {
-    assert.equal(Serial.number(0).length, 0);
+    assert.equal(Serial.number().length, 0);
   });
 
   it("returns array that has length as parameter provided", () => {
@@ -20,7 +20,7 @@ describe("Serial.number()", () => {
 
 describe("Serial.char.lower()", () => {
   it("returns 0 length array if parameter is nothing", () => {
-    assert.equal(Serial.char.lower(0).length, 0);
+    assert.equal(Serial.char.lower().length, 0);
   });
 
   it("returns array that has length as parameter provided", () => {
@@ -39,7 +39,7 @@ describe("Serial.char.lower()", () => {
 
 describe("Serial.char.upper()", () => {
   it("returns 0 length array if parameter is nothing", () => {
-    assert.equal(Serial.char.upper(0).length, 0);
+    assert.equal(Serial.char.upper().length, 0);
   });
 
   it("returns array that has length as parameter provided", () => {
