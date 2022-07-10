@@ -1,5 +1,7 @@
 # @tomsd/serial
 
+Serial generates the serial numbers or characters.
+
 ## Installation
 ``` sh
 npm install @tomsd/serial
@@ -7,16 +9,19 @@ npm install @tomsd/serial
 
 # Usage
 
-``` js
-import Serial from "@tomsd/serial";
-```
+``` typescript
+import { Serial } from "@tomsd/serial";
 
-``` js
-console.log(Serial.number(10));
-console.log(Serial.number(10,1));
-console.log(Serial.char.lower(26));
-console.log(Serial.char.upper(26));
-console.log(Serial.char.lower(5,2));
-console.log(Serial.char.upper(8,4));
+console.log(Serial.number(3)); // [0, 1, 2]
+
+console.log(Serial.number(3, 1)); // [1, 2, 3]
+
+console.log(Serial.char.lower(3)); // ["a", "b", "c"]
+
+console.log(Serial.char.upper(3)); // ["A", "B", "C"]
+
+console.log(Serial.char.lower(3, 2)); // ["c", "d", "e"]
+
+console.log(Serial.char.upper(3, 2)); // ["C", "D", "E"]
 
 ```
