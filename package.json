@@ -1,6 +1,6 @@
 {
   "name": "@tomsd/serial",
-  "version": "3.0.5",
+  "version": "3.1.0",
   "description": "generates serial numbers",
   "main": "dist/cjs/serial.js",
   "module": "dist/esm/serial.js",
