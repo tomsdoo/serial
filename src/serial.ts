@@ -16,7 +16,7 @@ class Chars {
     });
   }
 }
-export default class Serial {
+export class Serial {
   constructor(){}
   public static number(length?: number, start ?: number){
     let r : number[] = [];
@@ -36,3 +36,5 @@ export default class Serial {
     }
   };
 }
+
+export default Serial;

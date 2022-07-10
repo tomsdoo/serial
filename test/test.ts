@@ -1,5 +1,6 @@
 import {describe, it } from "mocha";
-import Serial from "../src/serial";
+import { Serial } from "../src/serial";
+import serial_default from "../src/serial";
 import { strict as assert } from "assert";
 
 describe("Serial.number()", () => {
@@ -53,5 +54,11 @@ describe("Serial.char.upper()", () => {
       Serial.char.upper(len, start)[0],
       String.fromCharCode(("A").charCodeAt(0) + start)
     );
+  });
+});
+
+describe("default export", () => {
+  it("Serial is also exported as default", () => {
+    assert.equal(serial_default.number(10).length, 10);
   });
 });
