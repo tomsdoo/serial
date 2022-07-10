@@ -18,9 +18,9 @@ class Chars {
 }
 export class Serial {
   constructor(){}
-  public static number(length?: number, start ?: number){
-    let r : number[] = [];
-    let ls : number = start ? start : 0;
+  public static number(length?: number, start?: number){
+    let r: number[] = [];
+    let ls: number = start ? start : 0;
     const localLength = length || 0;
     for(let i = 0; i < localLength; i++){
       r.push(i + ls);
@@ -28,10 +28,10 @@ export class Serial {
     return r;
   }
   public static char = {
-    lower(length?: number, start ?: number){
+    lower(length?: number, start?: number){
       return (new Chars("a")).getRange(length, start);
     },
-    upper(length?: number, start ?: number){
+    upper(length?: number, start?: number){
       return (new Chars("A")).getRange(length, start);
     }
   };
