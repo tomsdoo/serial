@@ -5,15 +5,15 @@
 */
 
 class Chars {
-  protected start_char : string;
-  constructor(provided_start_char : string){
+  protected start_char: string;
+  constructor(provided_start_char: string){
     this.start_char = provided_start_char;
   }
-  public getRange(length? : number, start ?: number){
-    const lc : number = this.start_char.charCodeAt(0);
-    return Serial.number(length, start).map(function(i:number){
-      return String.fromCharCode((i % 26) + lc);
-    });
+  public getRange(length?: number, start?: number){
+    const lc: number = this.start_char.charCodeAt(0);
+    return Serial
+      .number(length, start)
+      .map(i => String.fromCharCode((i % 26) + lc));
   }
 }
 export class Serial {
