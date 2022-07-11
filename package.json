@@ -12,6 +12,10 @@
   "keywords": [],
   "author": "tom",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomsdoo/serial"
+  },
   "devDependencies": {
     "@types/mocha": "^9.1.1",
     "@types/node": "^18.0.3",
