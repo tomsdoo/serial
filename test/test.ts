@@ -1,4 +1,4 @@
-import {describe, it } from "mocha";
+import { describe, it } from "mocha";
 import { Serial } from "../src/serial";
 import serial_default from "../src/serial";
 import { strict as assert } from "assert";
@@ -14,7 +14,8 @@ describe("Serial.number()", () => {
   });
 
   it("returns array that starts with second parameter", () => {
-    const start = 2, len = 10;
+    const start = 2,
+      len = 10;
     assert.equal(Serial.number(len, start)[0], start);
   });
 });
@@ -30,10 +31,11 @@ describe("Serial.char.lower()", () => {
   });
 
   it("returns array that starts with second parameter", () => {
-    const start = 2, len = 10;
+    const start = 2,
+      len = 10;
     assert.equal(
       Serial.char.lower(len, start)[0],
-      String.fromCharCode(("a").charCodeAt(0) + start)
+      String.fromCharCode("a".charCodeAt(0) + start)
     );
   });
 });
@@ -49,10 +51,11 @@ describe("Serial.char.upper()", () => {
   });
 
   it("returns array that starts with second parameter", () => {
-    const start = 2, len = 10;
+    const start = 2,
+      len = 10;
     assert.equal(
       Serial.char.upper(len, start)[0],
-      String.fromCharCode(("A").charCodeAt(0) + start)
+      String.fromCharCode("A".charCodeAt(0) + start)
     );
   });
 });

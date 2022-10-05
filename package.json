@@ -7,6 +7,9 @@
   "types": "dist/esm/serial.d.ts",
   "scripts": {
     "build": "tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json",
+    "format": "npm run format:src && npm run format:test",
+    "format:src": "prettier --write src/**/*.ts",
+    "format:test": "prettier --write test/**/*.ts",
     "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register \"test/test.ts\" --timeout 30000"
   },
   "keywords": [],
@@ -20,6 +23,7 @@
     "@types/mocha": "^9.1.1",
     "@types/node": "^18.0.3",
     "mocha": "^7.0.0",
+    "prettier": "^2.7.1",
     "ts-node": "^10.8.2",
     "typescript": "^4.0.3"
   }
